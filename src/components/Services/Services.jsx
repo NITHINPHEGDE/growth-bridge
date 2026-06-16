@@ -5,6 +5,8 @@ import { fadeUp, staggerContainer, VIEWPORT_OPTS } from '../../utils/helpers';
 
 const ICONS = { Megaphone, Video, Share2, Target, Palette, Globe, FileText, TrendingUp, BarChart2, Users };
 
+const CARD_COLORS = ['#0d1b3e', '#ffffff', '#2d7a3a', '#1a3460', '#ffffff', '#2d7a3a', '#0d1b3e', '#ffffff'];
+
 export default function Services() {
   return (
     <section id="services" className="section-padding bg-[#f4f7f4]">
@@ -38,25 +40,27 @@ export default function Services() {
         >
           {services.map((s, i) => {
             const Icon = ICONS[s.icon] || TrendingUp;
-            const isNavy = s.color === '#0d1b3e';
+            const bgColor = CARD_COLORS[i] || '#ffffff';
+            const isWhite = bgColor === '#ffffff';
             return (
               <motion.div
                 key={s.id}
                 variants={fadeUp}
                 custom={i % 4}
                 whileHover={{ y: -6, transition: { duration: 0.25 } }}
-                className={`group relative rounded-2xl p-6 cursor-pointer transition-shadow duration-300 ${isNavy
-                  ? 'bg-[#0d1b3e] text-white shadow-lg shadow-[#0d1b3e]/15'
-                  : 'bg-white text-[#0d1b3e] shadow-lg shadow-black/5 border border-gray-100'
+                style={{ backgroundColor: bgColor }}
+                className={`group relative rounded-2xl p-6 cursor-pointer transition-shadow duration-300 shadow-lg ${isWhite
+                  ? 'text-[#0d1b3e] shadow-black/5 border border-gray-100'
+                  : 'text-white'
                   }`}
               >
-                <div className={`w-11 h-11 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110 ${isNavy ? 'bg-[#2d7a3a]/20' : 'bg-[#0d1b3e]/5'
+                <div className={`w-11 h-11 rounded-xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110 ${isWhite ? 'bg-[#0d1b3e]/5' : 'bg-white/10'
                   }`}>
-                  <Icon size={20} className={isNavy ? 'text-[#4cba5e]' : 'text-[#2d7a3a]'} />
+                  <Icon size={20} className={isWhite ? 'text-[#2d7a3a]' : 'text-[#4cba5e]'} />
                 </div>
                 <h3 className="font-bold text-sm mb-2 leading-tight">{s.title}</h3>
-                <p className={`text-xs leading-relaxed ${isNavy ? 'text-gray-400' : 'text-gray-500'}`}>{s.desc}</p>
-                <div className={`mt-4 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-200 group-hover:opacity-100 opacity-0 group-hover:translate-x-0 -translate-x-2 ${isNavy ? 'bg-[#2d7a3a]' : 'bg-[#0d1b3e]'
+                <p className={`text-xs leading-relaxed ${isWhite ? 'text-gray-500' : 'text-gray-300'}`}>{s.desc}</p>
+                <div className={`mt-4 w-7 h-7 rounded-full flex items-center justify-center transition-all duration-200 group-hover:opacity-100 opacity-0 group-hover:translate-x-0 -translate-x-2 ${isWhite ? 'bg-[#0d1b3e]' : 'bg-white/20'
                   }`}>
                   <ArrowUpRight size={13} className="text-white" />
                 </div>
