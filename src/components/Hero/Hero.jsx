@@ -1,19 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Play, TrendingUp, Users, Star } from 'lucide-react';
-
-const floatVariant = {
-  animate: {
-    y: [0, -12, 0],
-    transition: { duration: 4, repeat: Infinity, ease: 'easeInOut' },
-  },
-};
-
-const statsData = [
-  { label: 'Clients Served', value: '200+' },
-  { label: 'Revenue Generated', value: '₹50Cr+' },
-  { label: 'Avg. ROI', value: '380%' },
-];
+import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -26,7 +13,7 @@ export default function Hero() {
         <svg className="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-              <path d="M 50 0 L 0 0 0 50" fill="none" stroke="white" strokeWidth="0.5"/>
+              <path d="M 50 0 L 0 0 0 50" fill="none" stroke="white" strokeWidth="0.5" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#grid)" />
@@ -45,9 +32,9 @@ export default function Hero() {
       </div>
 
       <div className="container mx-auto px-5 md:px-10 lg:px-14 max-w-7xl relative z-10 pt-24 pb-16 md:pt-32 md:pb-24">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="flex items-center justify-center">
           {/* Left */}
-          <div>
+          <div className="max-w-3xl text-center">
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -98,7 +85,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
-              className="text-gray-300 text-base sm:text-lg leading-relaxed mb-8 max-w-lg"
+              className="text-gray-300 text-base sm:text-lg leading-relaxed mb-8 max-w-lg mx-auto"
             >
               Growth Bridge helps businesses grow with powerful marketing strategies, creative content, and data-driven solutions that deliver real, measurable results.
             </motion.p>
@@ -108,7 +95,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.35 }}
-              className="flex flex-col sm:flex-row gap-4 mb-12"
+              className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <Link
                 to="/contact"
@@ -117,21 +104,19 @@ export default function Hero() {
                 Start Growing Today
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link
-                to="/case-studies"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl border border-white/20 text-white font-semibold hover:bg-white/5 hover:-translate-y-0.5 transition-all duration-200 text-sm sm:text-base group"
-              >
-                <Play size={16} className="text-[#4cba5e]" />
-                View Our Work
-              </Link>
             </motion.div>
 
-            {/* Stats */}
-            <motion.div
+            {/* Stats - commented for future use */}
+            {/* const statsData = [
+              { label: 'Clients Served', value: '200+' },
+              { label: 'Revenue Generated', value: '₹50Cr+' },
+              { label: 'Avg. ROI', value: '380%' },
+            ] */}
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="flex flex-wrap gap-6 sm:gap-8"
+              className="flex flex-wrap gap-6 sm:gap-8 justify-center mt-12"
             >
               {statsData.map((s, i) => (
                 <div key={i}>
@@ -139,95 +124,13 @@ export default function Hero() {
                   <div className="text-xs text-gray-400 mt-0.5">{s.label}</div>
                 </div>
               ))}
-            </motion.div>
+            </motion.div> */}
           </div>
-
-          {/* Right — Visual */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.9, delay: 0.2 }}
-            className="relative hidden lg:flex items-center justify-center"
-          >
-            {/* Main card */}
-            <div className="relative w-full max-w-md">
-              <div className="rounded-2xl bg-gradient-to-br from-[#1a3460] to-[#0d1b3e] border border-white/10 p-8 shadow-2xl">
-                {/* Chart mock */}
-                <div className="mb-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-gray-300 text-sm font-medium">Revenue Growth</span>
-                    <span className="text-[#4cba5e] text-xs font-semibold px-2 py-1 bg-[#2d7a3a]/20 rounded-full">+340%</span>
-                  </div>
-                  <div className="flex items-end gap-2 h-24">
-                    {[30, 45, 38, 60, 55, 75, 70, 90, 85, 100].map((h, i) => (
-                      <motion.div
-                        key={i}
-                        initial={{ scaleY: 0 }}
-                        animate={{ scaleY: 1 }}
-                        transition={{ duration: 0.6, delay: 0.4 + i * 0.06 }}
-                        style={{ height: `${h}%`, originY: 1 }}
-                        className={`flex-1 rounded-t-sm ${i >= 7 ? 'bg-gradient-to-t from-[#2d7a3a] to-[#4cba5e]' : 'bg-white/10'}`}
-                      />
-                    ))}
-                  </div>
-                </div>
-
-                {/* Metric rows */}
-                {[
-                  { label: 'Total Leads', val: '12,847', up: '+128%' },
-                  { label: 'Ad Spend ROAS', val: '8.4x', up: '+210%' },
-                  { label: 'Organic Traffic', val: '94.2K', up: '+95%' },
-                ].map((m, i) => (
-                  <div key={i} className="flex items-center justify-between py-2.5 border-b border-white/5 last:border-0">
-                    <span className="text-gray-400 text-xs">{m.label}</span>
-                    <div className="flex items-center gap-3">
-                      <span className="text-white text-sm font-semibold">{m.val}</span>
-                      <span className="text-[#4cba5e] text-xs">{m.up}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Floating badge 1 */}
-              <motion.div
-                variants={floatVariant}
-                animate="animate"
-                className="absolute -top-5 -left-6 bg-white rounded-xl p-3 shadow-2xl flex items-center gap-2.5"
-              >
-                <div className="w-8 h-8 rounded-lg bg-[#0d1b3e] flex items-center justify-center">
-                  <TrendingUp size={16} className="text-[#4cba5e]" />
-                </div>
-                <div>
-                  <div className="text-[10px] text-gray-500 font-medium">This Month</div>
-                  <div className="text-[#0d1b3e] text-sm font-bold">+₹2.4Cr</div>
-                </div>
-              </motion.div>
-
-              {/* Floating badge 2 */}
-              <motion.div
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
-                className="absolute -bottom-5 -right-4 bg-[#2d7a3a] rounded-xl p-3 shadow-2xl flex items-center gap-2.5"
-              >
-                <div className="flex -space-x-2">
-                  {['A', 'B', 'C'].map((l, i) => (
-                    <div key={i} className="w-7 h-7 rounded-full bg-[#4cba5e] border-2 border-[#2d7a3a] flex items-center justify-center text-white text-[10px] font-bold">{l}</div>
-                  ))}
-                </div>
-                <div>
-                  <div className="text-green-100 text-[10px] font-medium">New Clients</div>
-                  <div className="text-white text-sm font-bold flex items-center gap-1">
-                    <Star size={10} fill="white" />12 this week
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </motion.div>
         </div>
       </div>
 
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" />
+      {/* Bottom fade - commented for future use */}
+      {/* <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none" /> */}
     </section>
   );
 }

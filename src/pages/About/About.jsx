@@ -1,5 +1,5 @@
 import WhyChooseUs from '../../components/WhyChooseUs';
-import Stats from '../../components/Stats';
+// import Stats from '../../components/Stats';
 import CTA from '../../components/CTA/CTA';
 
 export default function About() {
@@ -18,7 +18,7 @@ export default function About() {
         </div>
       </div>
       <WhyChooseUs />
-      <Stats />
+      {/* <Stats /> */}
       <CTA />
     </div>
   );

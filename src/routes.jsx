@@ -5,7 +5,7 @@ import MainLayout from './layouts/MainLayout';
 const Home = lazy(() => import('./pages/Home/Home'));
 const About = lazy(() => import('./pages/About/About'));
 const Services = lazy(() => import('./pages/Services/Services'));
-const CaseStudies = lazy(() => import('./pages/CaseStudies/CaseStudies'));
+// const CaseStudies = lazy(() => import('./pages/CaseStudies/CaseStudies'));
 const Contact = lazy(() => import('./pages/Contact/Contact'));
 const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
 
@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
       { index: true, element: <Suspense fallback={<Fallback />}><Home /></Suspense> },
       { path: 'about', element: <Suspense fallback={<Fallback />}><About /></Suspense> },
       { path: 'services', element: <Suspense fallback={<Fallback />}><Services /></Suspense> },
-      { path: 'case-studies', element: <Suspense fallback={<Fallback />}><CaseStudies /></Suspense> },
+      // { path: 'case-studies', element: <Suspense fallback={<Fallback />}><CaseStudies /></Suspense> },
       { path: 'contact', element: <Suspense fallback={<Fallback />}><Contact /></Suspense> },
       { path: '*', element: <Suspense fallback={<Fallback />}><NotFound /></Suspense> },
     ],

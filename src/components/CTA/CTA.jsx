@@ -47,7 +47,7 @@ export default function CTA() {
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
               <a
-                href="tel:+919876543210"
+                href="tel:+91 63628 69652"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border border-white/25 text-white font-semibold hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-200"
               >
                 <Phone size={16} />

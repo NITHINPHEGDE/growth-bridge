@@ -25,7 +25,7 @@ export default function Navbar() {
       transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
       className={clsx(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        scrolled
+        scrolled || pathname !== '/'
           ? 'bg-[#0d1b3e]/95 backdrop-blur-md shadow-lg shadow-[#0d1b3e]/20'
           : 'bg-transparent'
       )}

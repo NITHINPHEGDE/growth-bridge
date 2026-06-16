@@ -18,14 +18,14 @@ export const services = [
     title: 'Social Media Management',
     desc: 'Building active, engaged communities and designing content strategies that amplify your brand reach.',
     icon: 'Share2',
-    color: '#ffffff'
+    color: '#0d1b3e'
   },
   {
     id: 'web-development',
     title: 'Website Development',
     desc: 'Developing high-performance, conversion-optimized, responsive websites that load fast and look stunning.',
     icon: 'Globe',
-    color: '#0d1b3e'
+    color: '#ffffff'
   },
   {
     id: 'video-production',
@@ -39,20 +39,20 @@ export const services = [
     title: 'Growth Strategy',
     desc: 'Comprehensive market research, competitor analysis, and funnel design to unlock new growth channels.',
     icon: 'TrendingUp',
-    color: '#ffffff'
+    color: '#0d1b3e'
   },
   {
     id: 'content-creation',
     title: 'Content Writing & SEO',
     desc: 'Writing optimized blog articles, copywriting, and landing page copy to dominate search results organically.',
     icon: 'FileText',
-    color: '#0d1b3e'
+    color: '#ffffff'
   },
   {
     id: 'analytics-consulting',
     title: 'Data & Analytics Consulting',
     desc: 'Implementing attribution models and tracking systems so you know exactly where every dollar goes.',
     icon: 'BarChart2',
-    color: '#ffffff'
+    color: '#0d1b3e'
   }
 ];
