@@ -2,20 +2,44 @@ import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import { Send, MapPin, Mail, Phone, CheckCircle } from 'lucide-react';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { fadeUp, slideLeft, slideRight, staggerContainer, VIEWPORT_OPTS } from '../../utils/helpers';
 import { SITE_EMAIL, SITE_PHONE, SITE_ADDRESS } from '../../utils/constants';
+
+const SERVICE_ID = 'service_45zcsec';
+const TEMPLATE_ID = 'template_zwc5cyi';
+const PUBLIC_KEY = 'ek6kM5ZPxqWXLpwZm';
 
 export default function ContactForm() {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   const onSubmit = async (data) => {
     setLoading(true);
-    await new Promise(r => setTimeout(r, 1200));
-    setSent(true);
-    setLoading(false);
-    reset();
+    setError(false);
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          name: data.name,
+          email: data.email,
+          phone: data.phone || 'Not provided',
+          service: data.service || 'Not selected',
+          message: data.message,
+        },
+        PUBLIC_KEY
+      );
+      setSent(true);
+      reset();
+    } catch (err) {
+      console.error(err);
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -163,6 +187,10 @@ export default function ContactForm() {
                     />
                     {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message.message}</p>}
                   </div>
+
+                  {error && (
+                    <p className="text-red-500 text-sm text-center">Something went wrong. Please try again!</p>
+                  )}
 
                   <motion.button
                     type="submit"
