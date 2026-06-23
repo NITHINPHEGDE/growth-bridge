@@ -31,10 +31,10 @@ const team = [
      qualifications: [
       'B.E – Mechanical Engineering, Dayananda Sagar College of Engineering',
       'Certified – Digital Marketing, EDDCAD Institute',
-      'Designer, QA Pvt. Ltd.',
-      'Assistant Marketing Lead, Green Earth Pvt. Ltd.',
+      'Ex-Designer, QA Pvt. Ltd.',
+      'Founder – Sri Lakshmi Constructions (Class A Government Contractor)',
     ],
-    bio: 'Lithin brings an uncommon combination of engineering discipline and creative marketing experience to Growth Bridge. A Mechanical Engineering graduate from Dayananda Sagar College of Engineering, he developed a strong analytical mindset before pivoting into the world of digital marketing through a certified course at EDDCAD. He went on to work as a Designer at QA Pvt. Ltd., where he contributed to visual communication and brand collateral for product campaigns, and later served as Assistant Marketing Lead at Green Earth Pvt. Ltd., where he helped grow their regional social media presence by 60% and supported lead generation campaigns that brought in over 200 qualified inquiries in under 6 months. At Growth Bridge, Lithin co-leads operations and ensures every campaign is delivered with the same precision an engineer brings to a blueprint.',
+    bio: 'Lithin brings a rare combination of engineering discipline, design sensibility, and entrepreneurial experience to Growth Bridge. A Mechanical Engineering graduate from Dayananda Sagar College of Engineering, he built his analytical foundation before expanding into digital marketing through a certified course at EDDCAD. He worked as a Designer at QA Pvt. Ltd., contributing to visual communication and brand collateral for product campaigns. Beyond marketing, Lithin is the founder of Sri Lakshmi Constructions, a Class A registered firm operating under government sector tenders — having successfully delivered 50+ construction projects across Karnataka. This firsthand experience running a business gives him a grounded, execution-focused perspective that he brings directly into how he supervises operations and client delivery at Growth Bridge.'
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const team = [
     accent: 'from-[#2d7a3a] to-[#163a1e]',
     tag: 'Finance',
     qualifications: [
-      'B.Com – Completed, Bengaluru University',
+      'B.Com – Completed, mysuru University',
       'MBA – HR & Marketing (Pursuing, 1 year remaining)',
       'Certified – MS Excel (Advanced Data & Reporting)',
       'Certified – Power BI (Business Analytics & Dashboards)',
