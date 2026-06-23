@@ -30,8 +30,8 @@ export default function Services() {
           </motion.p>
         </motion.div>
 
-        {/* Mobile: horizontal scroll row */}
-        <div className="flex sm:hidden gap-4 overflow-x-auto pb-3 -mx-5 px-5 snap-x snap-mandatory scrollbar-hide">
+        {/* Mobile: stacked vertical list */}
+        <div className="flex sm:hidden flex-col gap-3 w-full">
           {services.map((s, i) => {
             const Icon = ICONS[s.icon] || TrendingUp;
             const bgColor = CARD_COLORS[i] || '#ffffff';
@@ -40,7 +40,7 @@ export default function Services() {
               <div
                 key={s.id}
                 style={{ backgroundColor: bgColor }}
-                className={`group relative rounded-2xl flex-shrink-0 w-[72vw] snap-start flex flex-row items-center gap-4 px-5 py-4 shadow-lg ${
+                className={`group relative rounded-2xl w-full flex flex-row items-center gap-4 px-5 py-4 shadow-lg ${
                   isWhite
                     ? 'text-[#0d1b3e] shadow-black/5 border border-gray-100'
                     : 'text-white'
@@ -51,7 +51,7 @@ export default function Services() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="font-bold text-sm mb-1 leading-tight">{s.title}</h3>
-                  <p className={`text-xs leading-relaxed line-clamp-2 ${isWhite ? 'text-gray-500' : 'text-gray-300'}`}>{s.desc}</p>
+                  <p className={`text-xs leading-relaxed ${isWhite ? 'text-gray-500' : 'text-gray-300'}`}>{s.desc}</p>
                 </div>
               </div>
             );
