@@ -50,7 +50,6 @@ const team = [
       'Certified – MS Excel (Advanced Data & Reporting)',
       'Certified – Power BI (Business Analytics & Dashboards)',
       'Basic Tally & GST Accounting',
-      'Class Representative – Demonstrated leadership & coordination skills',
     ],
     bio: 'Thejas Koushik HS is the financial backbone of Growth Bridge — methodical, organised, and dependable. A B.Com graduate currently pursuing his MBA with dual specialisations in HR and Marketing, Thejas brings a solid understanding of business finance to the team. He is certified in MS Excel and Power BI, tools he actively uses to build budget trackers, campaign spend dashboards, and monthly P&L reports for Growth Bridge clients. With working knowledge of Tally and GST accounting, he keeps the agency\'s books clean and the numbers honest. As Class Representative during his college years, he built a habit of keeping people aligned and deadlines met — a trait that carries directly into how he manages financial reporting and vendor payments at Growth Bridge.',
   },

@@ -39,10 +39,15 @@ const socials = [
   { icon: Youtube, href: '#', label: 'YouTube' },
 ];
 
+const companyLinks = [
+  { label: 'About Us', href: '/about' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Careers', href: '/careers' },
+  { label: 'Contact', href: '/contact' },
+];
+
 const links = {
   Services: ['Digital Marketing', 'Performance Marketing', 'Social Media', 'Branding & Design', 'Website Development', 'Video Production'],
-  // Company: ['About Us', 'Case Studies', 'Blog', 'Careers', 'Contact'],
-  Company: ['About Us', 'Blog', 'Careers', 'Contact'],
   Resources: ['Free Audit', 'Growth Guides', 'Templates', 'FAQ'],
 };
 
@@ -79,7 +84,22 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Link columns */}
+          {/* Company links */}
+          <div>
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-5">Company</h4>
+            <ul className="space-y-3">
+              {companyLinks.map(item => (
+                <li key={item.label}>
+                  <Link to={item.href} className="text-gray-400 text-sm hover:text-white transition-colors flex items-center gap-1 group">
+                    {item.label}
+                    <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Other link columns */}
           {Object.entries(links).map(([title, items]) => (
             <div key={title}>
               <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-gray-500 mb-5">{title}</h4>
