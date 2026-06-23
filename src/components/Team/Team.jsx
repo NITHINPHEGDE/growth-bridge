@@ -60,13 +60,14 @@ const team = [
     initials: 'NT',
     accent: 'from-[#0d1b3e] to-[#2d7a3a]',
     tag: 'Strategy',
-    qualifications: [
-      'MBA – Marketing, Symbiosis Institute of Business Management',
-      'B.E – Electronics & Communication, VTU',
-      'Google Ads & Meta Blueprint Certified',
-      '7+ years in performance marketing & client management',
+     qualifications: [
+      'B.Tech – Computer Science & Engineering, Dayananda Sagar University (2026)',
+      'Co-Founder & CTO – Conza Tech (currently in beta)',
+      'AI & Machine Learning Specialist – LLMs, Generative AI, Full-Stack Engineering & Cloud (AWS)',
+      'Google Ads Search & Display Certified',
+      'HubSpot Inbound Marketing Certified',
     ],
-    bio: 'Nithin drives executive-level client relationships and performance marketing strategy. He specializes in scaling paid campaigns from ₹1L to ₹1Cr+ monthly ad spends.',
+    bio: 'Nithin is a rare blend of deep technical expertise and sharp business instinct. A 2026 CSE graduate from Dayananda Sagar University, he is fluent across the full software stack — from building scalable backend systems to deploying cloud infrastructure on AWS. Outside Growth Bridge, he co-founded Conza Tech, where he serves as CTO, leading product architecture and engineering for a platform focused on automating business workflows for SMEs — currently in private beta with early users onboarded. At Growth Bridge, he brings a founder\'s urgency and an engineer\'s precision to every client strategy he touches.',
   },
   {
     id: 5,
@@ -76,13 +77,13 @@ const team = [
     initials: 'LK',
     accent: 'from-[#163a1e] to-[#0d1b3e]',
     tag: 'Growth',
-    qualifications: [
-      'MBA – Digital Business, Manipal Academy of Higher Education',
-      'B.Sc – Information Technology, Bangalore University',
-      'HubSpot Growth Marketing Certified',
-      '6+ years in growth strategy & team management',
+     qualifications: [
+      'B.Tech – Computer Science & Engineering, Dayananda Sagar University (2026)',
+      'HubSpot Inbound Marketing Certified',
+      'Google Analytics 4 (GA4) Certified',
+      'Coordinated cross-functional teams of 10+ in university-level tech fests',
     ],
-    bio: 'Likith manages day-to-day operations across all departments, coordinating between creative, performance, and client success teams to ensure cohesive growth delivery.',
+    bio: 'Likith holds a B.Tech in CSE from Dayananda Sagar University (2026), where he was known for his ability to coordinate large teams and deliver results under pressure — skills he now applies daily at Growth Bridge. As General Manager, he bridges the gap between creative, performance, and client success teams. During university, he led the operations of DSU\'s annual tech summit, managing a ₹4L budget and a volunteer team of 30, an experience that shaped his systems-first approach to management.',
   },
 ];
 
