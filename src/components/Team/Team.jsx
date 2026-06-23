@@ -84,7 +84,7 @@ const team = [
       'Google Analytics 4 (GA4) Certified',
       'Coordinated cross-functional teams of 10+ in university-level tech fests',
     ],
-    bio: 'Likith holds a B.Tech in CSE from Dayananda Sagar University (2026), where he was known for his ability to coordinate large teams and deliver results under pressure — skills he now applies daily at Growth Bridge. As General Manager, he bridges the gap between creative, performance, and client success teams. During university, he led the operations of DSU\'s annual tech summit, managing a ₹4L budget and a volunteer team of 30, an experience that shaped his systems-first approach to management.',
+    bio: 'Likhith holds a B.Tech in CSE from Dayananda Sagar University (2026), where he was known for his ability to coordinate large teams and deliver results under pressure — skills he now applies daily at Growth Bridge. As General Manager, he bridges the gap between creative, performance, and client success teams. During university, he led the operations of DSU\'s annual tech summit, managing a ₹4L budget and a volunteer team of 30, an experience that shaped his systems-first approach to management.',
   },
 ];
 
