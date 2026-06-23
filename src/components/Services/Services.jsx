@@ -5,7 +5,7 @@ import { fadeUp, staggerContainer, VIEWPORT_OPTS } from '../../utils/helpers';
 
 const ICONS = { Megaphone, Video, Share2, Target, Palette, Globe, FileText, TrendingUp, BarChart2, Users };
 
-const CARD_COLORS = ['#0d1b3e', '#ffffff', '#2d7a3a', '#1a3460', '#ffffff', '#2d7a3a', '#0d1b3e', '#ffffff'];
+const CARD_COLORS = ['#0d1b3e', '#ffffff', '#2d7a3a', '#ffffff', '#1a3460', '#ffffff', '#2d7a3a', '#ffffff'];
 
 export default function Services() {
   return (
