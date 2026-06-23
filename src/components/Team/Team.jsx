@@ -18,7 +18,7 @@ const team = [
       'Certified – AutoCAD (Design & Drafting)',
       'Trained in SketchUp 3D Modelling & Enscape Rendering',
     ],
-    bio: 'Chiranth is the driving force behind Growth Bridge — a founder who combines a strong commerce foundation with a rare eye for design and spatial thinking. A B.Com graduate from BGS Institute of Technology, he is currently pursuing his MBA with a specialisation in HR, building leadership and organizational skills that directly shape how Growth Bridge is structured and scaled. Beyond business, Chiranth is formally trained in AutoCAD, SketchUp 3D modelling, and Enscape rendering — a creative edge that gives him a unique ability to visualize brands, spaces, and ideas with precision. He founded Growth Bridge to bridge the gap between great businesses and the marketing they deserve.',
+    bio: 'Chiranth is the driving force behind Growth Bridge — a founder who combines a strong commerce foundation with a rare eye for design and spatial thinking. A B.Com graduate from Pride First Grade College, he is currently pursuing his MBA with a specialisation in HR, building leadership and organizational skills that directly shape how Growth Bridge is structured and scaled. Beyond business, Chiranth is formally trained in AutoCAD, SketchUp 3D modelling, and Enscape rendering — a creative edge that gives him a unique ability to visualize brands, spaces, and ideas with precision. He founded Growth Bridge to bridge the gap between great businesses and the marketing they deserve.',
   },
   {
     id: 2,
