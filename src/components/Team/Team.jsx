@@ -31,7 +31,7 @@ const team = [
      qualifications: [
       'B.E – Mechanical Engineering, Dayananda Sagar College of Engineering',
       'Certified – Digital Marketing, EDDCAD Institute',
-      'Ex-Designer, QA Pvt. Ltd.',
+      'Designer, QA Pvt. Ltd.',
       'Founder – Sri Lakshmi Constructions (Class A Government Contractor)',
     ],
     bio: 'Lithin brings a rare combination of engineering discipline, design sensibility, and entrepreneurial experience to Growth Bridge. A Mechanical Engineering graduate from Dayananda Sagar College of Engineering, he built his analytical foundation before expanding into digital marketing through a certified course at EDDCAD. He worked as a Designer at QA Pvt. Ltd., contributing to visual communication and brand collateral for product campaigns. Beyond marketing, Lithin is the founder of Sri Lakshmi Constructions, a Class A registered firm operating under government sector tenders — having successfully delivered 50+ construction projects across Karnataka. This firsthand experience running a business gives him a grounded, execution-focused perspective that he brings directly into how he supervises operations and client delivery at Growth Bridge.'
