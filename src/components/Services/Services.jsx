@@ -30,13 +30,41 @@ export default function Services() {
           </motion.p>
         </motion.div>
 
-        {/* Grid */}
+        {/* Mobile: horizontal scroll row */}
+        <div className="flex sm:hidden gap-4 overflow-x-auto pb-3 -mx-5 px-5 snap-x snap-mandatory scrollbar-hide">
+          {services.map((s, i) => {
+            const Icon = ICONS[s.icon] || TrendingUp;
+            const bgColor = CARD_COLORS[i] || '#ffffff';
+            const isWhite = bgColor === '#ffffff';
+            return (
+              <div
+                key={s.id}
+                style={{ backgroundColor: bgColor }}
+                className={`group relative rounded-2xl flex-shrink-0 w-[72vw] snap-start flex flex-row items-center gap-4 px-5 py-4 shadow-lg ${
+                  isWhite
+                    ? 'text-[#0d1b3e] shadow-black/5 border border-gray-100'
+                    : 'text-white'
+                }`}
+              >
+                <div className={`w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 ${isWhite ? 'bg-[#0d1b3e]/5' : 'bg-white/10'}`}>
+                  <Icon size={20} className={isWhite ? 'text-[#2d7a3a]' : 'text-[#4cba5e]'} />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-bold text-sm mb-1 leading-tight">{s.title}</h3>
+                  <p className={`text-xs leading-relaxed line-clamp-2 ${isWhite ? 'text-gray-500' : 'text-gray-300'}`}>{s.desc}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Tablet/Desktop: original grid */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={VIEWPORT_OPTS}
           variants={staggerContainer}
-          className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:gap-6"
+          className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:gap-6"
         >
           {services.map((s, i) => {
             const Icon = ICONS[s.icon] || TrendingUp;

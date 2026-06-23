@@ -91,44 +91,42 @@ function TeamCard({ member, index, onOpen }) {
     <motion.div
       variants={fadeUp}
       custom={index}
-      whileHover={{ y: -8 }}
+      whileHover={{ y: -4 }}
       transition={{ duration: 0.3 }}
       onClick={() => onOpen(member)}
       className="group cursor-pointer"
     >
-      <div className="relative rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-lg shadow-black/5 hover:shadow-xl hover:shadow-[#2d7a3a]/10 hover:border-[#2d7a3a]/30 transition-all duration-300">
-        {/* Photo */}
-        <div className="relative aspect-[4/3] overflow-hidden">
+      <div className="relative rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-lg shadow-black/5 hover:shadow-xl hover:shadow-[#2d7a3a]/10 hover:border-[#2d7a3a]/30 transition-all duration-300 flex flex-row h-36 sm:h-40">
+        
+        {/* Photo - left side */}
+        <div className="relative w-28 sm:w-36 flex-shrink-0 overflow-hidden">
           <img
             src={member.photo}
             alt={member.name}
             className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
           />
-          {/* Gradient overlay */}
-          <div className={`absolute inset-0 bg-gradient-to-t ${member.accent} opacity-0 group-hover:opacity-60 transition-opacity duration-300`} />
-          {/* View profile hint */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span className="px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white text-xs font-semibold tracking-wide">
-              View Profile
-            </span>
-          </div>
-          {/* Tag badge */}
-          <div className="absolute top-4 left-4">
-            <span className={`px-3 py-1 rounded-full bg-gradient-to-r ${member.accent} text-white text-[10px] font-bold uppercase tracking-widest shadow-md`}>
+          {/* Gradient overlay on hover */}
+          <div className={`absolute inset-0 bg-gradient-to-r ${member.accent} opacity-0 group-hover:opacity-50 transition-opacity duration-300`} />
+          {/* Tag badge - bottom right of image */}
+          <div className="absolute bottom-2 right-2">
+            <span className={`px-2 py-0.5 rounded-full bg-gradient-to-r ${member.accent} text-white text-[9px] font-bold uppercase tracking-wider shadow-md`}>
               {member.tag}
             </span>
           </div>
         </div>
 
-        {/* Info */}
-        <div className="p-5">
-          <h3 className="text-[#0d1b3e] font-bold text-lg leading-tight mb-1" style={{ fontFamily: 'Syne, sans-serif' }}>
+        {/* Info - right side */}
+        <div className="flex flex-col justify-center p-4 flex-1 min-w-0">
+          <h3 className="text-[#0d1b3e] font-bold text-base leading-tight mb-1 truncate" style={{ fontFamily: 'Syne, sans-serif' }}>
             {member.name}
           </h3>
-          <p className="text-[#2d7a3a] text-xs font-semibold uppercase tracking-wider">{member.role}</p>
-          <div className="mt-3 pt-3 border-t border-gray-100 flex items-center gap-1.5 text-gray-400 text-xs">
-            <GraduationCap size={12} className="text-[#4cba5e] flex-shrink-0" />
-            <span>{member.qualifications[0]}</span>
+          <p className="text-[#2d7a3a] text-[10px] font-bold uppercase tracking-wider leading-tight mb-2">{member.role}</p>
+          <div className="flex items-start gap-1.5 text-gray-400 text-[10px] leading-snug">
+            <GraduationCap size={11} className="text-[#4cba5e] flex-shrink-0 mt-0.5" />
+            <span className="line-clamp-2">{member.qualifications[0]}</span>
+          </div>
+          <div className="mt-2 text-[#2d7a3a] text-[10px] font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+            View Profile →
           </div>
         </div>
       </div>
@@ -240,7 +238,7 @@ export default function Team() {
           whileInView="visible"
           viewport={VIEWPORT_OPTS}
           variants={staggerContainer}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5"
         >
           {team.map((member, i) => (
             <TeamCard key={member.id} member={member} index={i} onOpen={setSelected} />
