@@ -13,7 +13,7 @@ const team = [
     accent: 'from-[#0d1b3e] to-[#1a3460]',
     tag: 'Leadership',
     qualifications: [
-      'B.Com – BGS Institute of Technology, Bellur cross',
+      'B.Com – Pride First Grade College, Hassan',
       'MBA – Human Resource Management, Pursuing (BGS Institute of Technology)',
       'Certified – AutoCAD (Design & Drafting)',
       'Trained in SketchUp 3D Modelling & Enscape Rendering',
@@ -31,8 +31,8 @@ const team = [
      qualifications: [
       'B.E – Mechanical Engineering, Dayananda Sagar College of Engineering',
       'Certified – Digital Marketing, EDDCAD Institute',
-      'Ex-Designer, QA Pvt. Ltd.',
-      'Ex-Assistant Marketing Lead, Green Earth Pvt. Ltd.',
+      'Designer, QA Pvt. Ltd.',
+      'Assistant Marketing Lead, Green Earth Pvt. Ltd.',
     ],
     bio: 'Lithin brings an uncommon combination of engineering discipline and creative marketing experience to Growth Bridge. A Mechanical Engineering graduate from Dayananda Sagar College of Engineering, he developed a strong analytical mindset before pivoting into the world of digital marketing through a certified course at EDDCAD. He went on to work as a Designer at QA Pvt. Ltd., where he contributed to visual communication and brand collateral for product campaigns, and later served as Assistant Marketing Lead at Green Earth Pvt. Ltd., where he helped grow their regional social media presence by 60% and supported lead generation campaigns that brought in over 200 qualified inquiries in under 6 months. At Growth Bridge, Lithin co-leads operations and ensures every campaign is delivered with the same precision an engineer brings to a blueprint.',
   },
