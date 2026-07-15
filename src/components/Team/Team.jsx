@@ -7,22 +7,6 @@ const team = [
   {
     id: 1,
     name: 'Chiranth Gowda HK',
-    role: 'Founder & Chief Executive Officer',
-    photo: '/team/chiranth.jpeg',
-    initials: 'CH',
-    accent: 'from-[#0d1b3e] to-[#1a3460]',
-    tag: 'Leadership',
-    qualifications: [
-      'B.Com – Pride First Grade College, Hassan',
-      'MBA – Human Resource Management, Pursuing (BGS Institute of Technology)',
-      'Certified – AutoCAD (Design & Drafting)',
-      'Trained in SketchUp 3D Modelling & Enscape Rendering',
-    ],
-    bio: 'Chiranth is the driving force behind Growth Bridge — a founder who combines a strong commerce foundation with a rare eye for design and spatial thinking. A B.Com graduate from Pride First Grade College, he is currently pursuing his MBA with a specialisation in HR, building leadership and organizational skills that directly shape how Growth Bridge is structured and scaled. Beyond business, Chiranth is formally trained in AutoCAD, SketchUp 3D modelling, and Enscape rendering — a creative edge that gives him a unique ability to visualize brands, spaces, and ideas with precision. He founded Growth Bridge to bridge the gap between great businesses and the marketing they deserve.',
-  },
-  {
-    id: 2,
-    name: 'Lithin Gowda',
     role: 'Co-Founder & Supervisor',
     photo: '/team/lithin.jpeg',
     initials: 'LT',
@@ -35,6 +19,22 @@ const team = [
       'Founder – Sri Lakshmi Constructions (Class A Government Contractor)',
     ],
     bio: 'Lithin brings a rare combination of engineering discipline, design sensibility, and entrepreneurial experience to Growth Bridge. A Mechanical Engineering graduate from Dayananda Sagar College of Engineering, he built his analytical foundation before expanding into digital marketing through a certified course at EDDCAD. He worked as a Designer at QA Pvt. Ltd., contributing to visual communication and brand collateral for product campaigns. Beyond marketing, Lithin is the founder of Sri Lakshmi Constructions, a Class A registered firm operating under government sector tenders — having successfully delivered 50+ construction projects across Karnataka. This firsthand experience running a business gives him a grounded, execution-focused perspective that he brings directly into how he supervises operations and client delivery at Growth Bridge.'
+  },
+  {
+   id: 2,
+    name: 'Lithin Gowda',
+    role: 'Founder & Chief Executive Officer',
+    photo: '/team/chiranth.jpeg',
+    initials: 'CH',
+    accent: 'from-[#0d1b3e] to-[#1a3460]',
+    tag: 'Leadership',
+    qualifications: [
+      'B.Com – Pride First Grade College, Hassan',
+      'MBA – Human Resource Management, Pursuing (BGS Institute of Technology)',
+      'Certified – AutoCAD (Design & Drafting)',
+      'Trained in SketchUp 3D Modelling & Enscape Rendering',
+    ],
+    bio: 'Chiranth is the driving force behind Growth Bridge — a founder who combines a strong commerce foundation with a rare eye for design and spatial thinking. A B.Com graduate from Pride First Grade College, he is currently pursuing his MBA with a specialisation in HR, building leadership and organizational skills that directly shape how Growth Bridge is structured and scaled. Beyond business, Chiranth is formally trained in AutoCAD, SketchUp 3D modelling, and Enscape rendering — a creative edge that gives him a unique ability to visualize brands, spaces, and ideas with precision. He founded Growth Bridge to bridge the gap between great businesses and the marketing they deserve.',
   },
   {
     id: 3,
